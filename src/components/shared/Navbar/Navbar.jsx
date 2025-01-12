@@ -89,7 +89,7 @@ const Navbar = () => {
                 className="text-[#FC4319] hover:bg-[#FC4319] hover:text-white p-2 w-40 rounded-lg font-semibold  cursor-pointer"
                 onClick={closeDrawer}
               >
-               <Link to='/scontact'>Contact</Link>
+               <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </div>
