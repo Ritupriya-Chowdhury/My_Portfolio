@@ -9,7 +9,7 @@ Hi, I'm Ritupriya Chowdhury. I've been learning web development for three years.
 
 ## Technology Uses
 
-- React-Vite, react-router-dom, react-hook-form, tailwind, react-icons, @reduxjs/toolkit,react-redux 
+- React-Vite, react-router-dom, react-hook-form, tailwind, react-icons, @reduxjs/toolkit, react-redux, sweetalert2, @emailjs/browser
 
 ## Features
 - Download resume in pdf.

@@ -14,7 +14,7 @@ const MySkills = () => {
     return (
         <div className={`${theme === "dark" ? "bg-black" : "bg-slate-50 "} py-8 `}>
             <div>
-                <p className="font-bold text-3xl lg:text-5xl text-[#FC4319] text-center py-4">
+                <p className="font-bold text-3xl  text-[#FC4319] text-center py-4">
                     My Skills
                 </p>
             </div>
@@ -27,7 +27,7 @@ const MySkills = () => {
                             : "text-black border-gray-800"
                         }`}
                 >
-                    <p className="text-2xl lg:text-3xl font-bold">Technical Skills</p>
+                    <p className="text-2xl  font-bold">Technical Skills</p>
                     <div className="py-4 ">
                         <p className="lg:text-xl text-lg font-bold py-2 ">
                             Experience I Have
@@ -102,7 +102,7 @@ const MySkills = () => {
                     className={`px-8 lg:px-16 py-4
                     ${theme === "dark" ? "text-white " : "text-black "} `}
                 >
-                    <p className="lg:text-3xl text-2xl font-bold">
+                    <p className=" text-2xl font-bold">
                         Education & Certification
                     </p>
                     <div className="pt-4">

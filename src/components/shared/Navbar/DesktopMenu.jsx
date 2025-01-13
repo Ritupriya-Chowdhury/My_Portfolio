@@ -12,9 +12,6 @@ const DesktopMenu = () => {
                 <li className="hover:bg-[#FC4319] hover:text-white p-2 rounded-lg font-semibold cursor-pointer">
                     <Link to='/resume'>Resume</Link>
                 </li>
-                <li className="hover:bg-[#FC4319] hover:text-white p-2 rounded-lg font-semibold cursor-pointer">
-                    <Link to='/contact'>Contact</Link>
-                </li>
             </ul>
         </div>
     );

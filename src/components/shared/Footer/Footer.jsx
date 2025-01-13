@@ -18,7 +18,7 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link to="www.linkedin.com/in/ritupriya-chowdhury-3769a4332">
+                    <Link to="https://www.linkedin.com/in/ritupriya-chowdhury-3769a4332">
                         <div className="border-2 rounded p-2 hover:bg-[#FC4319] hover:border-[#FC4319]">
                             <FaLinkedinIn />
                         </div>
