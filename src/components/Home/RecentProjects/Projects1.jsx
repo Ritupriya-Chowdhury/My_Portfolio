@@ -36,13 +36,13 @@ const Projects1 = () => {
                     <div className="flex justify-between  my-4">
                         <div>
                             <Link to="https://github.com/Ritupriya-Chowdhury/NightQueenGlow-Client">
-                                <div  className=" text-lg font-bold text-[#FC4319] 
+                                <div  className=" text-lg font-bold text-[#FC4319] text-center
                             p-2 border border-[#FC4319] rounded-lg hover:bg-[#FC4319] hover:text-white w-36">Client Site</div>
                             </Link>
                         </div>
                         <div>
                             <Link to="https://github.com/Ritupriya-Chowdhury/NightQueenGlow-Server">
-                                <div className=" text-lg font-bold text-[#FC4319] 
+                                <div className=" text-lg font-bold text-[#FC4319] text-center
                             p-2 border border-[#FC4319] rounded-lg hover:bg-[#FC4319] hover:text-white w-36">Server Site</div>
                             </Link>
                         </div>

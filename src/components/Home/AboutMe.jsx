@@ -8,7 +8,7 @@ const AboutMe = () => {
       className={`${
         theme === "dark" ? "bg-gray-950 text-white" : "bg-orange-100 text-black"
       } 
-         py-8`}
+         py-8`} id="about"
     >
       <p className="font-bold text-3xl  text-[#FC4319] text-center py-4">
         More About Me

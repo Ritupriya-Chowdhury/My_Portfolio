@@ -98,7 +98,7 @@ const SendEmail = () => {
           <input
             id="sub"
             type="text"
-            {...register("sub", { required: "Subject is required" })}
+            {...register("sub..", { required: "Subject is required" })}
             className={`w-full p-3 text-black border rounded-md shadow-sm focus:ring-[#FC4319] focus:border-[#FC4319] ${
               errors.subject ? "border-red-500" : "border-gray-900"
             }`}

@@ -19,7 +19,7 @@ Hi, I'm Ritupriya Chowdhury. I've been learning web development for three years.
 -  https://github.com/Ritupriya-Chowdhury/My_Portfolio
 
 ### My Resume Link
-- 
+-  https://drive.google.com/file/d/1UvSE6981k5SaZFAQNMiCDIbqdGAV_KMl/view?usp=drive_link
 
 ### LiveHost Link
--  https://night-queen-glow.vercel.app
+-  https://ritupriya.vercel.app/

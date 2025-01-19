@@ -3,7 +3,7 @@ import App from "../App"
 import Home from "../pages/Home";
 import Resume from "../pages/Resume";
 import Page404 from "../pages/Page404";
-import Projects from "../pages/Projects";
+
 
 const router = createBrowserRouter([
     {
@@ -15,18 +15,15 @@ const router = createBrowserRouter([
           path: '',
           element: <Home />
         },
-        {
-            path: 'projects',
-            element:<Projects/>
-          },
-        {
-          path: 'resume',
-          element: <Resume />
-        },
+        
        
         
       ]
     }, 
+    {
+      path: 'resume',
+      element: <Resume />
+    },
    
     {
       path:'/*',

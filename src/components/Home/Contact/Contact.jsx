@@ -8,7 +8,7 @@ const Contact = () => {
     <div
       className={`${
         theme === "dark" ? "bg-gray-950 text-white" : "bg-orange-100 text-black"
-      } `}
+      } ` } id="contact"
     >
       <p className="font-bold text-3xl  text-[#FC4319] text-center py-8">
         Get In Touch

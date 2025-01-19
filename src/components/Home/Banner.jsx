@@ -6,7 +6,7 @@ const Banner = () => {
     const theme = useSelector((state) => state.theme.theme);
     return (
         <div className={`${theme === 'dark' ? 'bg-gray-950 text-white' : 'bg-orange-100 text-black'} 
-        py-24 lg:py-0 lg:pt-20 min-h-screen`}>
+        py-24 lg:py-0 lg:pt-20 min-h-screen`} id="hero">
             <div className="bg-gradient-to-r  p-8 lg:p-16 ">
                 <div className=" mx-auto flex flex-col lg:flex-row items-center gap-4">
                     {/* About Section  */}

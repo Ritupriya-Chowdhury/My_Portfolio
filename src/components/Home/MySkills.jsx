@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 const MySkills = () => {
     const theme = useSelector((state) => state.theme.theme);
     return (
-        <div className={`${theme === "dark" ? "bg-black" : "bg-slate-50 "} py-8 `}>
+        <div className={`${theme === "dark" ? "bg-black" : "bg-slate-50 "} py-8 `} id="skills">
             <div>
                 <p className="font-bold text-3xl  text-[#FC4319] text-center py-4">
                     My Skills
