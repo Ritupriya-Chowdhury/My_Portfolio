@@ -26,20 +26,27 @@ const Navbar = () => {
       <nav className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <Logo />
-        <div className="flex space-x-8">
+        <div className="flex space-x-2  md:space-x-8">
           {/* Desktop Links */}
           <DesktopMenu />
           <div>
             <Link to="/resume">
-              <div className="hover:bg-[#FC4319] text-xl lg:text-base hover:text-white px-2 py-1 lg:py-2 rounded-lg font-semibold cursor-pointer">
+              <div className="hover:bg-[#FC4319] text-sm lg:text-base hover:text-white px-2 py-1 lg:py-2 rounded-lg font-semibold cursor-pointer">
                 Resume
+              </div>
+            </Link>
+          </div>
+          <div>
+            <Link to="/all-projects">
+              <div className="hover:bg-[#FC4319] text-sm lg:text-base hover:text-white px-2 py-1 lg:py-2 rounded-lg font-semibold cursor-pointer">
+                All Projects
               </div>
             </Link>
           </div>
           <MobileMenu />
           <button
             onClick={() => dispatch(toggleTheme())}
-            className={`text-2xl px-2 bg-white text-[#FC4319]  ${
+            className={`text-lg lg:text-2xl px-2 bg-white text-[#FC4319]  ${
               theme === "dark" ? "" : ""
             }  
             rounded-full shadow-md hover:bg-gray-100 transition`}

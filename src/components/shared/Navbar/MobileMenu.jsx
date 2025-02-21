@@ -15,7 +15,7 @@ const MobileMenu= () => {
         <div className="block lg:hidden">
              {/* Mobile Menu Icon */}
           <button
-            className="mt-2 text-2xl"
+            className="mt-2 text-lg lg:text-2xl"
             onClick={toggleDrawer}
             aria-label="Toggle Menu"
           >

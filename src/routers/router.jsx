@@ -3,6 +3,8 @@ import App from "../App"
 import Home from "../pages/Home";
 import Resume from "../pages/Resume";
 import Page404 from "../pages/Page404";
+import AllProjects from "../pages/AllProjects";
+import ProjectDetails from "../pages/ProjectDetails";
 
 
 const router = createBrowserRouter([
@@ -14,6 +16,16 @@ const router = createBrowserRouter([
         {
           path: '',
           element: <Home />
+        },
+        
+        {
+          path: 'all-projects',
+          element: <AllProjects/>
+        },
+        
+        {
+          path: 'all-projects/:id',
+          element: <ProjectDetails/>
         },
         
        

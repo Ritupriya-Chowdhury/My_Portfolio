@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import img1 from "../../../assets/Images/projects/night-queen-glow.vercel.app_(Nest Hub Max) (2).png";
-import img2 from "../../../assets/Images/projects/car-rental-reservation-system-six.vercel.app_(Nest Hub Max).png";
+import img2 from "../../../assets/Images/projects/Screenshot (37).png";
 import img3 from "../../../assets/Images/projects/stalwart-lebkuchen-71fb6b.netlify.app_(Nest Hub) (1).png";
 import img4 from "../../../assets/Images/projects/fractos-client.vercel.app_(Nest Hub Max).png";
+import { Link } from "react-router-dom";
 
 const MyRecentProjects = () => {
   const theme = useSelector((state) => state.theme.theme);
@@ -13,46 +13,30 @@ const MyRecentProjects = () => {
     {
       id: 1,
       name: "NightQueenGlow",
-      image: img1, // Use the imported image directly
-      description:
-        "NightQueenGlow is a beauty product e-commerce platform with buyer, seller, and admin dashboards, featuring Firebase Authentication and JWT authorization. Built with React, TypeScript, Node.js, MongoDB, and Tailwind CSS, it ensures a secure and seamless experience.",
-      serverSite:
-        "https://github.com/Ritupriya-Chowdhury/NightQueenGlow-Server",
-      clientSite:
-        "https://github.com/Ritupriya-Chowdhury/NightQueenGlow-Client",
-      liveHost: "https://night-queen-glow.vercel.app/",
+      image: img1, 
+      technology:
+        "React-Vite, react-router-dom, react-hook-form, tailwind, DaisyUi, react-icons, react swiper,react-paginate, react-rating, sweetalert2, react-chartjs-2",
     },
     {
       id: 2,
       name: "RPCarRes",
       image: img2,
-      description:
-        "A car reservation platform enabling users to book cars as per their preferences, with admin roles for managing cars, bookings, and users. Built using React, TypeScript, Node.js, Mongoose, Redux, and Tailwind CSS for a streamlined experience.",
-      serverSite:
-        "https://github.com/Ritupriya-Chowdhury/car-Car-Rental-Reservation-System",
-      clientSite:
-        "https://github.com/Ritupriya-Chowdhury/Car-Rental_Reservation_Client",
-      liveHost: "https://car-rental-reservation-system-six.vercel.app/",
+      technology:
+        "React-Vite, Typescript, react-router-dom, react-hook-form, tailwind, react-helmet-async, react-icons, aos, react-redux, redux toolkit , react swiper, redux-persist, sonner",
     },
     {
       id: 3,
       name: "RPCamper",
       image: img3,
-      description:
-        "A camper shop website offering a wide range of camping equipment for adventure enthusiasts. Users can browse products, manage items (add, update, delete), and add products to their cart.",
-      serverSite: "https://github.com/Ritupriya-Chowdhury/RpCamper-Server",
-      clientSite: "https://github.com/Ritupriya-Chowdhury/RpCamper-Client",
-      liveHost: "https://stalwart-lebkuchen-71fb6b.netlify.app/",
+      technology:
+        "React-Vite, Typescript, react-router-dom, react-hook-form, redux, tailwind,"
     },
     {
       id: 4,
       name: "Fractos",
       image: img4,
-      description:
-        "Fractos is an educational platform designed for students to attend live mock exams and analyze performance. It includes dashboards for users, teachers, and admins, enabling features like course creation and question management. Built with Next.js, Mongoose, Firebase, JWT, and Tailwind CSS for an interactive learning experience.",
-      serverSite: "https://github.com/shamimhossain515419/fractos-client",
-      clientSite: "https://github.com/shamimhossain515419/fractos-client",
-      liveHost: "https://fractos-client.vercel.app/",
+      technology:
+        "Next.js , Mongoose, JWT, MongoDB, firebase , tailwind, HTML, CSS",
     },
   ];
 
@@ -81,33 +65,30 @@ const MyRecentProjects = () => {
           <img
               src={project.image}
               alt={project.name}
-              className="rounded-md w-[500px] md:w-[670px] lg:w-[600px] h-64 md:h-[700px] lg:h-96 overflow-x-auto mx-auto object-cover mb-4"
+              className="rounded-md w-[500px] md:w-[670px] lg:w-[600px] h-64 md:h-[700px] 
+              lg:h-96 overflow-x-auto mx-auto object-cover mb-8"
             />
           </div>
-            <h3 className="font-semibold text-xl mb-2">{project.name}</h3>
-            <p className="text-sm mb-4">{project.description}</p>
-            <div className="flex justify-between">
-              <Link
-                to={project.serverSite}
+            <h3 className="font-semibold text-xl mb-4">{project.name}</h3>
+            <p className="text-sm mb-4"><strong>Technology:</strong> {project.technology}</p>
+           <div className="flex justify-center my-8">
+           <Link
+                to={`/all-projects/${project.id}`}
                 className="hover:bg-[#FC4319] border border-[#FC4319] font-semibold hover:text-white px-4 py-2 rounded bg-white text-[#FC4319]"
               >
-                Server Site
+                Details
               </Link>
-              <Link
-                to={project.liveHost}
-                className="bg-[#FC4319] text-white px-4 py-2 rounded hover:px-6 hover:text-xl"
-              >
-                Live Host
-              </Link>
-              <Link
-                to={project.clientSite}
-                className="hover:bg-[#FC4319] border border-[#FC4319] font-semibold hover:text-white px-4 py-2 rounded bg-white text-[#FC4319]"
-              >
-                Client Site
-              </Link>
-            </div>
+           </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center my-4">
+      <Link
+                to="/all-projects"
+                className="hover:bg-[#FC4319] border border-[#FC4319] font-semibold hover:text-white px-4 py-2 rounded bg-white text-[#FC4319]"
+              >
+                VIew All
+              </Link>
       </div>
     </div>
   );
